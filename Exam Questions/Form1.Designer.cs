@@ -40,7 +40,7 @@
             this.txtAnswerOne = new System.Windows.Forms.TextBox();
             this.lblQuestionTwo = new System.Windows.Forms.Label();
             this.txtAnswerTwo = new System.Windows.Forms.TextBox();
-            this.txtQuestionThree = new System.Windows.Forms.TextBox();
+            this.txtAnswerThree = new System.Windows.Forms.TextBox();
             this.lblQuestionThree = new System.Windows.Forms.Label();
             this.btnAnswers = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -87,6 +87,7 @@
             this.btnEnglish.TabIndex = 3;
             this.btnEnglish.Text = "Start";
             this.btnEnglish.UseVisualStyleBackColor = true;
+            this.btnEnglish.Click += new System.EventHandler(this.BtnEnglish_Click);
             // 
             // btnProgramming
             // 
@@ -162,13 +163,13 @@
             this.txtAnswerTwo.TabIndex = 11;
             this.txtAnswerTwo.Visible = false;
             // 
-            // txtQuestionThree
+            // txtAnswerThree
             // 
-            this.txtQuestionThree.Location = new System.Drawing.Point(22, 398);
-            this.txtQuestionThree.Name = "txtQuestionThree";
-            this.txtQuestionThree.Size = new System.Drawing.Size(279, 20);
-            this.txtQuestionThree.TabIndex = 13;
-            this.txtQuestionThree.Visible = false;
+            this.txtAnswerThree.Location = new System.Drawing.Point(22, 398);
+            this.txtAnswerThree.Name = "txtAnswerThree";
+            this.txtAnswerThree.Size = new System.Drawing.Size(279, 20);
+            this.txtAnswerThree.TabIndex = 13;
+            this.txtAnswerThree.Visible = false;
             // 
             // lblQuestionThree
             // 
@@ -189,6 +190,7 @@
             this.btnAnswers.TabIndex = 14;
             this.btnAnswers.Text = "Check Answers";
             this.btnAnswers.UseVisualStyleBackColor = true;
+            this.btnAnswers.Click += new System.EventHandler(this.BtnAnswers_Click);
             // 
             // label6
             // 
@@ -256,7 +258,7 @@
             this.Controls.Add(this.lblScore);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnAnswers);
-            this.Controls.Add(this.txtQuestionThree);
+            this.Controls.Add(this.txtAnswerThree);
             this.Controls.Add(this.lblQuestionThree);
             this.Controls.Add(this.txtAnswerTwo);
             this.Controls.Add(this.lblQuestionTwo);
@@ -272,6 +274,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -291,7 +294,7 @@
         private System.Windows.Forms.TextBox txtAnswerOne;
         private System.Windows.Forms.Label lblQuestionTwo;
         private System.Windows.Forms.TextBox txtAnswerTwo;
-        private System.Windows.Forms.TextBox txtQuestionThree;
+        private System.Windows.Forms.TextBox txtAnswerThree;
         private System.Windows.Forms.Label lblQuestionThree;
         private System.Windows.Forms.Button btnAnswers;
         private System.Windows.Forms.Label label6;
